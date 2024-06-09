@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Matching Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Card Matching Game</h1>
+    <div id="controls">
+        <div id="difficulty-selection">
+            <label for="difficulty">난이도:</label>
+            <select id="difficulty">
+                <option value="easy">초급</option>
+                <option value="medium">중급</option>
+                <option value="hard">전문가</option>
+            </select>
+        </div>
+        <div id="buttons">
+            <button id="start-button">게임 시작</button>
+            <button id="restart-button">새로운 게임</button>
+        </div>
+        <div id="hints">
+            <div>
+                <span id="flip-count">카드를 뒤집은 횟수: 0</span>
+            </div>
+            <div id="hint1-container">
+                <button id="hint1-button">힌트 1</button>
+                <span id="hint1-count">남은 횟수: 0</span>
+            </div>
+            <div id="hint2-container">
+                <button id="hint2-button">힌트 2</button>
+                <span id="hint2-count">남은 횟수: 0</span>
+            </div>
+            <div id="match-count-container">
+                <span>연속으로 맞춘 횟수: </span>
+                <span id="match-count">0</span>
+            </div>
+        </div>
+        <div id="timer">시간: <span id="timerDisplay">0</span> 초</div>
+        <div id="score">점수: <span id="scoreDisplay">0</span></div>
+        <div id="answer-message"></div>
+        <div id="current-player">플레이어 턴</div>
+    </div>
+    <div id="game-board"></div>
+    <script src="script.js"></script>
+</body>
+</html>
